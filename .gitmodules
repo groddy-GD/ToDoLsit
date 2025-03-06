@@ -1,0 +1,3 @@
+{submodule "Todolist/todo"}
+    path = Todolist/Todo
+    url = https://github.com/groddy-GD/ToDoLsit.git
