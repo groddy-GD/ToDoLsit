@@ -17,9 +17,9 @@ function App() {
   }, [])
   
 
-  const saveTolS = (params) => { 
-    localStorage.setItem("todos", JSON.stringify(todos))
-   }
+  // const saveTolS = (params) => { 
+  //   localStorage.setItem("todos", JSON.stringify(todos))
+  //  }
  
    const toggleFinished = (e) => {  
       setshowFinished(!showFinished)
@@ -33,7 +33,7 @@ function App() {
         return item.id!==id
       });
       setTodos(newTodos)
-      saveTolS()
+      // saveTolS()
 
 
     }
@@ -43,7 +43,7 @@ function App() {
         return item.id!==id
       });
       setTodos(newTodos)
-      saveTolS()
+      // saveTolS()
 
       
       
@@ -51,7 +51,7 @@ function App() {
     const handleAdd = ()=>{
       setTodos([...todos,{id:uuidv4(), todo, isCompleted: false}])
       setTodo("")
-      saveTolS()
+      // saveTolS()
 
 
       
@@ -70,7 +70,7 @@ function App() {
       let newTodos = [...todos];
       newTodos[index].isCompleted = !newTodos[index].isCompleted;
       setTodos(newTodos)
-      saveTolS()
+      // saveTolS()
 
      }
     
